@@ -4,11 +4,10 @@
 }
 body {
   width: 100%;
-  padding: 10px;
 }
 
 .container {
-  width: 600px;
+  width: 900px;
   margin: auto;
 }
 
@@ -22,4 +21,35 @@ h1 {
   font-size: 15px;
   width: 350px;
   margin-bottom: 5px;
+}
+
+nav {
+  overflow:hidden;
+  background: #ff4c4c;
+  margin-bottom:30px;
+}
+nav li {
+  float:left;
+  list-style-type: none;
+}
+nav a {
+  text-decoration:none;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  padding:8px;
+  transition:0.5s;
+  display: block;
+}
+nav a:hover {
+  background:#fff;
+  color: #ff4c4c;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  margin-left: 10px;
+  float: left;
+  background: #FFF;
 }
