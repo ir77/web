@@ -1,0 +1,43 @@
+div.Tile {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  float: left;
+}
+
+div.Tile:nth-child(even) {
+  background-color:#339933;
+}
+
+div.Tile:nth-child(odd) {
+  background-color:#1BA1E2;
+}
+
+span.TileTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 3px;
+  font-family: Meiryo UI;
+  font-size: 14pt;
+  color: White;
+}
+
+span.TileContents {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  top: 10%;
+  font-family: Meiryo UI;
+  font-size: 24pt;
+  color: White;
+}
+
+div.Tile:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  /* IEの場合は -ms-transform: scale(1.1, 1.1); */
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 0.75;
+}
